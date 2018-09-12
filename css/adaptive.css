@@ -1,3 +1,5 @@
 @media (max-width: 992px) {
   .site_name {
-    display: none; } }
+    display: none; }
+  .col_basket {
+    padding: 0; } }

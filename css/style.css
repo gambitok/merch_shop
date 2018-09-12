@@ -21,12 +21,6 @@ main {
   .login li {
     margin-left: 15px; }
 
-.search input {
-  border: none;
-  width: 100%;
-  border-right: 1px solid;
-  border-radius: 0; }
-
 .search i {
   font-size: 20px; }
 
@@ -35,7 +29,22 @@ main {
   height: 30px; }
 
 .search .navbar-brand {
-  padding-left: .5rem; }
+  padding-left: .5rem;
+  padding-bottom: 0; }
+
+.search button {
+  border: none; }
+
+.search .input-group {
+  background: #f9f9fb;
+  border: none; }
+  .search .input-group input {
+    background: #f9f9fb;
+    border: none;
+    box-shadow: none; }
+  .search .input-group button {
+    border: none;
+    border-radius: 0 5px 5px 0; }
 
 .navbar {
   color: #6c757d; }

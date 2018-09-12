@@ -15,7 +15,6 @@
     <script src="js/script.js"></script>
 </head>
 <body>
-
 <header>
     <div class="login">
         <div class="container">
@@ -36,22 +35,23 @@
         <div class="container">
             <div class="blog-header py-3">
                 <div class="row align-items-center">
-                    <div class="col-2 pt-1">
+                    <div class="col-2 pt-1 col_logo">
                         <a class="navbar-brand" href="#">
                             <img src="img/logo.jpg" class="d-inline-block align-top" alt="Logotype">
                             <span class="site_name">Company</span>
                         </a>
                     </div>
-                    <div class="col-7">
-                        <input class="form-control" type="text" placeholder="Find your thing">
+                    <div class="col-8 col_search">
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Find your thing">
+                          <span class="input-group-btn">
+                            <button class="btn btn-outline-secondary" type="button"><i class="fa fa-search"></i></button>
+                          </span>
+                        </div>
                     </div>
-                    <div class="col-1">
-                        <a class="text-muted" href="#"><i class="fa fa-search"></i></a>
+                    <div class="col-1 col_basket">
+                        <button class="btn btn-outline-secondary" type="button"><i class="fa fa-shopping-basket"></i></button>
                     </div>
-                    <div class="col-1 ">
-                        <a class="text-muted" href="#"><i class="fa fa-shopping-basket"></i></a>
-                    </div>
-
                 </div>
             </div>
         </div>

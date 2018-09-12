@@ -8,15 +8,11 @@ main {
   padding-bottom: 60px;
 }
 
-.cont-pad {
-  padding-left: 15px;
-  padding-right: 15px;
-}
+.cont-pad {padding-left: 15px; padding-right: 15px;}
 
 .pad0 {padding: 0;}
 
-.pads0 {
-  padding-left: 0!important; padding-right: 0!important;}
+.pads0 {padding-left: 0!important; padding-right: 0!important;}
 
 .login {
   background: #f2f2f6;
@@ -26,12 +22,6 @@ main {
 }
 
 .search {
-  input {
-    border: none;
-    width: 100%;
-    border-right: 1px solid;
-    border-radius: 0;
-  }
   i {
     font-size: 20px;
   }
@@ -41,6 +31,23 @@ main {
   }
   .navbar-brand {
     padding-left: .5rem;
+    padding-bottom: 0;
+  }
+  button {
+    border:none;
+  }
+  .input-group {
+    background: #f9f9fb;
+    border: none;
+    input {
+      background: #f9f9fb;
+      border: none;
+      box-shadow: none;
+    }
+    button {
+      border:none;
+      border-radius: 0 5px 5px 0;
+    }
   }
 }
 
@@ -63,17 +70,14 @@ main {
   background-color: #404751;
   color: #fff;
   padding-top: 2%;
-
   .container {
     padding-right: 15px;
     padding-left: 15px;
     background: #404751;
   }
-
   p, li{
     line-height: 1.5em;
   }
-
   a {
     color:#fff;
     &:hover {
@@ -104,11 +108,9 @@ main {
   border-radius: 50%;
   padding: 0;
   cursor: pointer;
-
   &:hover {
     transform: scale(1.2);
   }
-
   i {
     display: inline-block;
     width: inherit;
