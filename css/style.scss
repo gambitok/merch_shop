@@ -13,6 +13,7 @@ a, h1, h2, h3, h4, h5, span, p, li { font-family: 'Open Sans', sans-serif; }
 
 main {
   padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .cont-pad {padding-left: 15px; padding-right: 15px;}
@@ -101,6 +102,15 @@ main {
   background: #404751;
 }
 
+.btn-transform {
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
 .btn-floating {
   -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
   box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
@@ -119,9 +129,6 @@ main {
   border-radius: 50%;
   padding: 0;
   cursor: pointer;
-  &:hover {
-    transform: scale(1.2);
-  }
   i {
     display: inline-block;
     width: inherit;
@@ -147,6 +154,34 @@ main {
   background-color: #0082ca!important;
 }
 
-.btn-dribbble {
+.btn-pint {
   background-color: #ec4a89!important;
+}
+
+.text-link {
+  color: #4e555b!important;
+}
+
+.text-tw {
+  color: #55acee!important;
+}
+
+.text-gplus {
+  color: #dd4b39!important;
+}
+
+.text-li {
+  color: #0082ca!important;
+}
+
+.text-pint {
+  color: #ec4a89!important;
+}
+
+.text-link {
+  color: #4e555b!important;
+}
+
+.checked {
+  color: orange;
 }

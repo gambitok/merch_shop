@@ -18,9 +18,19 @@
   .col_basket {
     padding: 0;
   }
+
+  .product {
+    padding-top: 60px;
+  }
   .catalogue {
-    .nav {
-      display: inline-block;
+    button{
+      width: 100%;
+    }
+  }
+
+  .catalogue-bottom {
+    button{
+      width: 100%;
     }
   }
 }

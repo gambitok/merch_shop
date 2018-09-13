@@ -1,0 +1,116 @@
+main {
+  h2 {
+    font-size: 25px;
+  }
+  li {
+    line-height: 1.5em;
+    padding-bottom: 2%;
+  }
+  p {
+    font-size: 12px;
+    margin: 0;
+  }
+  button {
+    width: 50%;
+  }
+
+  .list-inline {
+    a {
+      padding-right: 15px;
+    }
+  }
+
+  .product-type {
+    color: darkgray;
+  }
+
+  .product-action {
+    color: red;
+  }
+
+  .product-price {
+    font-size: 20px;
+    padding: 20px 0;
+  }
+
+  .product-buy {
+    padding: 20px 0;
+  }
+
+  .product-delivery {
+    p {
+      color: gray;
+      i {
+        color: mediumseagreen;
+        font-size: 14px;
+      }
+      span {
+        color:#000;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .catalogue-bottom {
+    background: #f2f2f6;
+    img {
+      width: 75px;
+      height: 75px;
+      border-radius: .25em;
+    }
+    h3 {
+      margin:0;
+      text-transform: uppercase;
+    }
+    button {
+      padding: 0;
+      margin-top: 4%;
+      width: 50%;
+      height: 30px;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+    ul {
+      margin: 0;
+    }
+
+    .product-author {
+      padding: 15px;
+      h3 {
+        font-weight: bold;
+        font-size: 15px;
+      }
+      span {
+        color: darkgray;
+        text-transform: uppercase;
+        font-size: 13px;
+      }
+      li {
+        padding: 0;
+        line-height: 1em;
+      }
+    }
+
+    .product-info {
+      padding: 15px 0;
+      text-align: center;
+      h3 {
+        font-size: 12px;
+      }
+      span {
+        font-size: 12px;
+      }
+    }
+
+    .product-review {
+      padding: 15px;
+      text-align: center;
+      h3 {
+        font-size: 12px;
+      }
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+}

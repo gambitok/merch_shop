@@ -3,5 +3,9 @@
     display: none; }
   .col_basket {
     padding: 0; }
-  .catalogue .nav {
-    display: inline-block; } }
+  .product {
+    padding-top: 60px; }
+  .catalogue button {
+    width: 100%; }
+  .catalogue-bottom button {
+    width: 100%; } }
