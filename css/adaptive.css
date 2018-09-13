@@ -2,4 +2,6 @@
   .site_name {
     display: none; }
   .col_basket {
-    padding: 0; } }
+    padding: 0; }
+  .catalogue .nav {
+    display: inline-block; } }

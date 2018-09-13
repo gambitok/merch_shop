@@ -1,8 +1,15 @@
-
-html {
-  position: relative;
-  min-height: 100%;
+html, body {
+  width: 100%;
+  height: 100%;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a, h1, h2, h3, h4, h5, span, p, li { font-family: 'Open Sans', sans-serif; }
 
 main {
   padding-bottom: 60px;
@@ -35,10 +42,14 @@ main {
   }
   button {
     border:none;
+    &:focus {
+      box-shadow: none!important;
+    }
   }
   .input-group {
     background: #f9f9fb;
     border: none;
+    border-radius: .25rem;
     input {
       background: #f9f9fb;
       border: none;
