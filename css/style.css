@@ -25,6 +25,10 @@ main {
   padding-left: 0 !important;
   padding-right: 0 !important; }
 
+.required {
+  color: red;
+  font-size: 12px; }
+
 .login {
   background: #f2f2f6; }
   .login li {
@@ -71,8 +75,7 @@ main {
 
 .footer {
   background-color: #404751;
-  color: #fff;
-  padding-top: 2%; }
+  color: #fff; }
   .footer .container {
     padding-right: 15px;
     padding-left: 15px;
@@ -83,6 +86,59 @@ main {
     color: #fff; }
     .footer a:hover {
       color: #fff; }
+  .footer h2 {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 5%;
+    padding-top: 5%; }
+  .footer .footer-head {
+    margin: 0;
+    background: #f2f2f6;
+    color: #000; }
+    .footer .footer-head .row {
+      padding: 1% 0;
+      margin-left: -15px;
+      margin-right: -15px; }
+    .footer .footer-head span {
+      color: darkgray; }
+  .footer .form-input {
+    padding-bottom: 5%; }
+    .footer .form-input button {
+      color: #fff;
+      background: #ce4c52;
+      border: none;
+      border-radius: 0 20px 20px 0;
+      text-transform: uppercase;
+      padding: 10px;
+      width: 150px;
+      position: relative;
+      top: -2px; }
+    .footer .form-input input {
+      background: #404751;
+      color: darkgray;
+      width: 400px;
+      border: 1px solid darkgray;
+      border-radius: 20px 0 0 20px;
+      margin: 0;
+      display: inline-block;
+      padding: 10px 20px; }
+  .footer .footer-about {
+    padding-bottom: 4%;
+    display: flex;
+    text-transform: uppercase; }
+    .footer .footer-about li {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: auto; }
+  .footer .footer-copy a {
+    font-size: 14px;
+    color: #8c95a5; }
+  .footer .footer-copy .list-divider {
+    padding-left: 5px; }
+    .footer .footer-copy .list-divider:before {
+      content: "/";
+      padding-right: 10px;
+      color: #8c95a5; }
 
 .page-footer {
   background: #404751; }

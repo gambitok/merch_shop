@@ -22,6 +22,8 @@ main {
 
 .pads0 {padding-left: 0!important; padding-right: 0!important;}
 
+.required {color: red; font-size: 12px;}
+
 .login {
   background: #f2f2f6;
   li {
@@ -81,7 +83,6 @@ main {
 .footer {
   background-color: #404751;
   color: #fff;
-  padding-top: 2%;
   .container {
     padding-right: 15px;
     padding-left: 15px;
@@ -94,6 +95,77 @@ main {
     color:#fff;
     &:hover {
       color:#fff;
+    }
+  }
+  h2 {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+
+  .footer-head {
+    margin: 0;
+    background: #f2f2f6;
+    color: #000;
+    .row {
+      padding: 1% 0;
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+    span {
+      color: darkgray;
+    }
+  }
+
+  .form-input {
+    padding-bottom: 5%;
+    button {
+      color: #fff;
+      background: #ce4c52;
+      border:none;
+      border-radius: 0 20px 20px 0;
+      text-transform: uppercase;
+      padding: 10px;
+      width: 150px;
+      position: relative;
+      top: -2px;
+    }
+    input {
+      background: #404751;
+      color: darkgray;
+      width: 400px;
+      border: 1px solid darkgray;
+      border-radius: 20px 0 0 20px;
+      margin: 0;
+      display: inline-block;
+      padding: 10px 20px;
+    }
+  }
+
+  .footer-about {
+    padding-bottom: 4%;
+    display: flex;
+    text-transform: uppercase;
+    li {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: auto;
+    }
+  }
+
+  .footer-copy {
+    a {
+      font-size: 14px;
+      color:#8c95a5;
+    }
+    .list-divider {
+      padding-left: 5px;
+      &:before {
+        content: "/";
+        padding-right: 10px;
+        color: #8c95a5;
+      }
     }
   }
 }
