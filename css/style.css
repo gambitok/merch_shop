@@ -91,10 +91,36 @@ main {
     font-size: 25px;
     padding-bottom: 5%;
     padding-top: 5%; }
+  .footer .footer-above {
+    background: #fff;
+    padding-bottom: 15px; }
+    .footer .footer-above .row {
+      background: #fff; }
+    .footer .footer-above .col-4 {
+      text-align: center;
+      padding-left: 75px;
+      padding-right: 75px; }
+    .footer .footer-above li {
+      padding-bottom: 15px; }
+    .footer .footer-above img {
+      width: 75px;
+      height: 75px; }
+    .footer .footer-above h3 {
+      padding-top: 15px;
+      color: #40354e;
+      font-size: 16px;
+      font-weight: bold; }
+    .footer .footer-above span {
+      color: gray;
+      font-size: 16px; }
+    .footer .footer-above a {
+      color: #6c92e3;
+      font-size: 16px; }
   .footer .footer-head {
     margin: 0;
     background: #f2f2f6;
-    color: #000; }
+    color: #404751;
+    font-size: 14px; }
     .footer .footer-head .row {
       padding: 1% 0;
       margin-left: -15px;

@@ -104,10 +104,45 @@ main {
     padding-top: 5%;
   }
 
+  .footer-above {
+    background: #fff;
+    padding-bottom: 15px;
+    .row {
+      background: #fff;
+    }
+    .col-4 {
+      text-align: center;
+      padding-left: 75px;
+      padding-right: 75px;
+    }
+    li {
+      padding-bottom: 15px;
+    }
+    img {
+      width: 75px;
+      height: 75px;
+    }
+    h3{
+      padding-top: 15px;
+      color: #40354e;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    span {
+      color: gray;
+      font-size: 16px;
+    }
+    a {
+      color: #6c92e3;
+      font-size: 16px;
+    }
+  }
+
   .footer-head {
     margin: 0;
     background: #f2f2f6;
-    color: #000;
+    color: #404751;
+    font-size: 14px;
     .row {
       padding: 1% 0;
       margin-left: -15px;
