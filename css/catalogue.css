@@ -76,3 +76,22 @@ main .product-like {
 main .product-to-price {
   background: #f2f2f6;
   padding: 15px; }
+
+main .product-design {
+  padding: 30px 0; }
+  main .product-design h2 {
+    text-align: center;
+    padding-bottom: 30px; }
+  main .product-design .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; }
+  main .product-design img {
+    width: 100%;
+    max-height: 150px;
+    margin: 0 auto;
+    display: block; }
+  main .product-design h3 {
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 10px; }
