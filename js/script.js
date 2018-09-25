@@ -1,8 +1,10 @@
 $(document).ready(function() {
-    $("#main").load("tpl/catalogue.html",function() {
-        startOwl();
+    // $("#main").load("tpl/catalogue.html",function() {
+    //     startOwl();
+    // });
+    $("body").load("tpl/room.html",function () {
+        startRoom();
     });
-
 });
 
 function startOwl() {
@@ -24,4 +26,20 @@ function startOwl() {
             }
         }
     })
+}
+
+function startRoom() {
+    $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+    });
+
+    $('#sidebarCollapse').on('click', function () {
+        // open or close navbar
+        $('#sidebar').toggleClass('active');
+        // close dropdowns
+        $('.collapse.in').toggleClass('in');
+        // and also adjust aria-expanded attributes we use for the open/closed arrows
+        // in our CSS
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+    });
 }
