@@ -15,6 +15,11 @@ a:focus {
   transition: all 0.3s;
 }
 
+.btn-info {
+  background: #6d7fcc;
+  border-color: #6d7fcc;
+}
+
 .navbar {
   padding: 15px 10px;
   background: #f2f2f2;
@@ -42,8 +47,7 @@ a:focus {
   margin: 40px 0;
 }
 
-i,
-span {
+i, span {
   display: inline-block;
 }
 
@@ -209,11 +213,41 @@ a.article:hover {
   right: 0;
 }
 
+#content {
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+  }
+  a {
+    color:#15a8fb;
+    text-align: center;
+  }
+  .dropzone {
+    border: 2px dashed rgba(0,0,0,0.3);
+    background: #ecf4f7;
+  }
+  .dropzone__info {
+    padding: 0 15px;
+    i {
+      color: #fff;
+    }
+    .col-2 {
+      background: #4a4a4a;
+    }
+  }
+}
+
+
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
 
 @media (max-width: 768px) {
+  #content{
+    width: 100%;
+  }
   #sidebar {
     min-width: 80px;
     max-width: 80px;

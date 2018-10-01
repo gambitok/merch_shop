@@ -26,6 +26,8 @@ main {
 
 .required {color: red; font-size: 12px;}
 
+.pad15c {padding: 0 15px}
+
 ///////////////////
 
 .owl-prev {
@@ -34,8 +36,8 @@ main {
   position: absolute;
   top: 40%;
   margin-left: -20px;
-  display: block!IMPORTANT;
-  border:0px solid black;
+  display: block !important;
+  border:0 solid black;
 }
 
 .owl-next {
@@ -45,12 +47,14 @@ main {
   top: 40%;
   right: -25px;
   display: block!IMPORTANT;
-  border:0px solid black;
+  border:0 solid black;
 }
-.owl-prev i, .owl-next i {transform : scale(1,6); color: #ccc;}
+.owl-prev i, .owl-next i {
+  transform : scale(1,6);
+  color: #ccc;
+}
 
 /////////////////
-
 
 .login {
   background: #f2f2f6;
