@@ -26,8 +26,6 @@ main {
 
 .required {color: red; font-size: 12px;}
 
-.pad15c {padding: 0 15px}
-
 ///////////////////
 
 .owl-prev {
@@ -46,7 +44,7 @@ main {
   position: absolute;
   top: 40%;
   right: -25px;
-  display: block!IMPORTANT;
+  display: block !important;
   border:0 solid black;
 }
 .owl-prev i, .owl-next i {

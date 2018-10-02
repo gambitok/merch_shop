@@ -32,6 +32,28 @@ main {
   color: red;
   font-size: 12px; }
 
+.owl-prev {
+  width: 15px;
+  height: 100px;
+  position: absolute;
+  top: 40%;
+  margin-left: -20px;
+  display: block !important;
+  border: 0 solid black; }
+
+.owl-next {
+  width: 15px;
+  height: 100px;
+  position: absolute;
+  top: 40%;
+  right: -25px;
+  display: block !important;
+  border: 0 solid black; }
+
+.owl-prev i, .owl-next i {
+  transform: scale(1, 6);
+  color: #ccc; }
+
 .login {
   background: #f2f2f6; }
   .login li {
