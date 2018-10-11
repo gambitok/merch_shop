@@ -39,3 +39,22 @@ function startRoom() {
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
     });
 }
+
+function menuToggle(a) {
+    $(".components li").each(function() {
+        $(this).removeClass('active');
+    });
+    $(a).toggleClass('active');
+    var id=$(a).attr('id');
+    var content=$('#content_main');
+
+    switch(id) {
+        case 'menu-home': content.load('/tpl/room/home.html'); break;
+        case 'menu-design': content.load('/tpl/room/design.html'); break;
+        case 'menu-dash': content.load('/tpl/room/dash.html', function () {
+            $('.js-example-basic-single').select2();
+        }); break;
+        case 'menu-stats': content.load('/tpl/room/stats.html'); break;
+        default: console.log('error'); break;
+    }
+}

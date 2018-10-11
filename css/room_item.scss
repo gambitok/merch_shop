@@ -1,0 +1,23 @@
+.dashboard {
+  h3 {
+    text-align: left;
+  }
+  .row {
+    margin: 0;
+  }
+  .col-5 {
+    background: white;
+    padding: 15px;
+    h4 {
+      font-size: 30px;
+      font-weight: bold;
+      color: #595959;
+    }
+    li {
+      text-align: center;
+    }
+    button {
+      margin-top: 30px;
+    }
+  }
+}
