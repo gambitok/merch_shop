@@ -32,6 +32,9 @@ main {
   color: red;
   font-size: 12px; }
 
+.pointer {
+  cursor: pointer; }
+
 .owl-prev {
   width: 15px;
   height: 100px;
