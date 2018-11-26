@@ -55,6 +55,7 @@ function menuToggle(a) {
             $('.js-example-basic-single').select2();
         }); break;
         case 'menu-stats': content.load('/tpl/room/stats.html'); break;
+        case 'menu-tools': content.load('/tpl/room/tools.html'); break;
         default: console.log('error'); break;
     }
 }
