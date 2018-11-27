@@ -56,6 +56,7 @@ function menuToggle(a) {
         }); break;
         case 'menu-stats': content.load('/tpl/room/stats.html'); break;
         case 'menu-tools': content.load('/tpl/room/tools.html'); break;
+        case 'menu-account': content.load('/tpl/room/account.html'); break;
         default: console.log('error'); break;
     }
 }
