@@ -11,6 +11,10 @@ html, body {
 
 a, h1, h2, h3, h4, h5, span, p, li { font-family: 'Open Sans', sans-serif; }
 
+$red: #dc4165;
+$purple: #6d7fcc;
+$pink: deeppink;
+
 main {
   padding-bottom: 60px;
   padding-top: 60px;
@@ -24,9 +28,11 @@ main {
 
 .pads0 {padding-left: 0!important; padding-right: 0!important;}
 
-.required {color: red; font-size: 12px;}
+.required {color: $red; font-size: 12px;}
 
-.pointer { cursor: pointer;}
+.validation_class {border: 2px solid $red; }
+
+.pointer {cursor: pointer;}
 
 ///////////////////
 

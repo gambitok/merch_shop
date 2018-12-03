@@ -1,3 +1,5 @@
+@import "style.scss";
+
 p {
   font-family: 'Poppins', sans-serif;
   font-size: 1.1em;
@@ -15,13 +17,13 @@ a:focus {
 }
 
 .btn-info {
-  background: #6d7fcc;
-  border-color: #6d7fcc;
+  background: $purple;
+  border-color: $purple;
 }
 
 .btn-outline-info {
-  border-color: #6d7fcc;
-  color: #6d7fcc;
+  border-color: $purple;
+  color: $purple;
 }
 
 .navbar {
@@ -148,7 +150,7 @@ i, span {
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-  border-left: 7px solid #6d7fcc;
+  border-left: 7px solid $purple;
   background: #e4e4e4;
 }
 
@@ -167,7 +169,7 @@ a[data-toggle="collapse"] {
 ul ul a {
   font-size: 0.9em !important;
   padding-left: 30px !important;
-  background: #6d7fcc;
+  background: $purple;
 }
 
 ul.CTAs {
@@ -189,7 +191,7 @@ a.download {
 
 a.article,
 a.article:hover {
-  background: #6d7fcc !important;
+  background: $purple !important;
   color: #fff !important;
 }
 

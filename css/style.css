@@ -29,8 +29,11 @@ main {
   padding-right: 0 !important; }
 
 .required {
-  color: red;
+  color: #dc4165;
   font-size: 12px; }
+
+.validation_class {
+  border: 2px solid #dc4165; }
 
 .pointer {
   cursor: pointer; }

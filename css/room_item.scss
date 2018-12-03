@@ -1,10 +1,12 @@
+@import "style.scss";
+
 //design
 .design {
   background: #fff;
   padding: 30px;
   margin-bottom: 60px;
   h1 {
-    color: #6d7fcc;
+    color: $purple;
     font-size: 36px;
     font-weight: bold;
     text-align: center;
@@ -178,8 +180,8 @@
 //statistics
 .statistics {
   li .active {
-    color: #6d7fcc;
-    border-bottom: 3px solid #6d7fcc;
+    color: $purple;
+    border-bottom: 3px solid $purple;
   }
   .container {
     padding: 30px;
@@ -328,7 +330,7 @@
       }
 
       .customcheck input:checked ~ .checkmark {
-        background-color: #6d7fcc;
+        background-color: $purple;
         border-radius: 5px;
       }
 
@@ -379,7 +381,7 @@
         font-weight: bold;
       }
       .text-not-accept {
-        color: red;
+        color: $red;
         font-weight: bold;
       }
       .tool-link {
@@ -405,7 +407,7 @@
     font-size: 15px;
   }
   a {
-    color: deeppink;
+    color: $pink;
     &:hover {
       text-decoration: underline;
     }
@@ -463,4 +465,79 @@
     }
   }
 }
+
+
+.register {
+  .form-signin {
+    background: white;
+    width: 100%;
+    max-width: 660px;
+    padding: 15px;
+    margin: auto;
+  }
+  h1 {
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  h2 {
+    color: darkgray;
+    font-size: 15px;
+    font-style: italic;
+  }
+  a {
+    color: $pink;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  input[type='text'] {
+    border-radius: 0;
+    height: 40px;
+    padding: 12px;
+  }
+  li {
+    margin-bottom: 15px;
+  }
+  button {
+    font-size: 15px;
+    border-radius: 0;
+  }
+  label {
+    font-weight: bold;
+  }
+  .required_field {
+    color: $pink;
+    &:after {
+      content: ' *';
+    }
+  }
+}
+
+.modal_success {
+  .modal-body {
+      background: #b7e8fa;
+  }
+  .modal-dialog {
+    margin: 0;
+    margin-left: 80%;
+  }
+  p {
+    color:black;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  a {
+    color: $purple;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: underline;
+  }
+}
+
+.modal-backdrop {
+  display: none;
+}
+
 
