@@ -1,10 +1,10 @@
 $(document).ready(function() {
-    // $("#main").load("tpl/catalogue.html",function() {
-    //     startOwl();
-    // });
-    $("body").load("tpl/room.html",function () {
-        startRoom();
+    $("#main").load("tpl/category.html",function() {
+        startOwl();
     });
+    // $("body").load("tpl/room.html",function () {
+    //     startRoom();
+    // });
 });
 
 function startOwl() {
