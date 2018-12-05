@@ -14,6 +14,21 @@ main {
   padding-bottom: 60px;
   padding-top: 60px; }
 
+.close {
+  width: auto; }
+
+#BasketForm .modal-dialog {
+  max-width: 1000px; }
+
+.basket-table {
+  width: 100%; }
+  .basket-table thead {
+    background: #f1f1f1; }
+  .basket-table input {
+    width: 100px; }
+  .basket-table img {
+    width: 100px; }
+
 .cont-pad {
   padding-left: 15px;
   padding-right: 15px; }
@@ -703,6 +718,3 @@ main {
   font-weight: bold;
   text-transform: capitalize;
   text-decoration: underline; }
-
-.modal-backdrop {
-  display: none; }

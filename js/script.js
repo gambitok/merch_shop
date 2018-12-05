@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     $("#main").load("tpl/category.html",function() {
         startOwl();
     });

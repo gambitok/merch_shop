@@ -1,3 +1,5 @@
+@import "style.scss";
+
 .icon-rotate {
   transform: rotate(180deg); }
 
@@ -24,11 +26,11 @@
       cursor: pointer;
       font-size: 12px;
       padding: 5px 15px;
-      &:hover {
-        color: #000;
-        border-left: 2px solid red;
-        padding-left: 13px;
-      }
+    }
+    .checked-li {
+      color: #000;
+      border-left: 2px solid red;
+      padding-left: 13px;
     }
     .sidebar-title {
       padding-bottom: 30px;
@@ -55,17 +57,57 @@
         max-width: 100%;
         margin-bottom: 15px;
       }
+      .category-product-amount {
+        height: 0;
+        span {
+          font-size: 12px;
+          width: 35px;
+          height: 35px;
+          color: #fff;
+          background: $purple;
+          padding: 10px;
+          border-radius: 2em;
+          position: relative;
+          top: -10px;
+          left: 85%;
+          text-align: center;
+        }
+      }
       .category-product-info {
         margin-top: auto;
-        h5 {
+        a {
+          color: $purple;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        h4 {
           font-size: 12px;
         }
-        h6 {
+        h5 {
           color: darkgray;
           font-size: 12px;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
+        }
+        h6 {
+          font-size: 12px;
+        }
+        button {
+          width: 100%;
+          padding: 0;
+        }
+        .category-product-info-basket {
+          margin-bottom: 10px;
+          span {
+            font-size: 15px;
+          }
+          input {
+            width: 100%;
+            border: none;
+            text-align: right;
+          }
         }
       }
     }

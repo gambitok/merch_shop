@@ -19,7 +19,7 @@
                 <p>Department</p> <a class="sidebar__department-arrow" onclick="toggleBlock(this,'department_list')"><i class="fa fa-angle-up"></i></a>
             </div>
             <ul id="department_list" class="sidebar-list list-inline">
-                <li>All departments</li>
+                <li class="checked-li">All departments</li>
                 <li>Men's</li>
                 <li>Women's</li>
                 <li>Kids</li>
@@ -36,7 +36,7 @@
                 <p>Product</p> <a class="sidebar__product-arrow" onclick="toggleBlock(this,'product_list')"><i class="fa fa-angle-up"></i></a>
             </div>
             <ul id="product_list" class="sidebar-list list-inline">
-                <li>All stationary</li>
+                <li class="checked-li">All stationary</li>
                 <li>Greeting cards</li>
                 <li>Postcards</li>
                 <li>Stickers</li>
@@ -48,12 +48,20 @@
     <div class="col-10 category-products">
 
         <div class="category-product-card">
+            <div class="category-product-amount">
+                <span>99</span>
+            </div>
             <div class="category-product-image">
                 <img src="/img/logo.jpg">
             </div>
             <div class="category-product-info">
-                <h5>$99.99</h5>
-                <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet architecto ducimus ipsa iure, molestiae numquam obcaecati optio perferendis quidem quis quod quos ratione sequi similique sit ullam vero voluptates.</h6>
+                <div class="category-product-info-basket row align-items-center mar0">
+                    <div class="col-6 pad0"> <span>$99.99</span></div>
+                    <!--<div class="col-6 pad0"><input type="number" min="0" value="0" title="amount"></div>-->
+                </div>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet architecto ducimus ipsa iure, molestiae numquam obcaecati optio perferendis quidem quis quod quos ratione sequi similique sit ullam vero voluptates.</h5>
+                <h6>by <a href="#">Author</a></h6>
+                <button class="btn btn-outline-info" onclick="toBasket();"> <i class="fa fa-check"></i> <i class="fa fa-shopping-bag"></i></button>
             </div>
         </div>
 
@@ -62,8 +70,13 @@
                 <img src="/img/logo.jpg">
             </div>
             <div class="category-product-info">
-                <h5>$99.99</h5>
-                <h6>Winter Jacket</h6>
+                <div class="category-product-info-basket row align-items-center mar0">
+                    <div class="col-6 pad0"> <span>$99.99</span></div>
+                    <!--<div class="col-6 pad0"><input type="number" min="0" value="0" title="amount"></div>-->
+                </div>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet architecto ducimus ipsa iure, molestiae numquam obcaecati optio perferendis quidem quis quod quos ratione sequi similique sit ullam vero voluptates.</h5>
+                <h6>by <a href="#">Author</a></h6>
+                <button class="btn btn-info" onclick="showBasket();"><i class="fa fa-plus"></i> <i class="fa fa-shopping-basket"></i></button>
             </div>
         </div>
 
@@ -72,8 +85,9 @@
                 <img src="/img/logo.jpg">
             </div>
             <div class="category-product-info">
-                <h5>$99.99</h5>
-                <h6>Winter Jacket</h6>
+                <h4>$99.99</h4>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet architecto ducimus ipsa iure, molestiae numquam obcaecati optio perferendis quidem quis quod quos ratione sequi similique sit ullam vero voluptates.</h5>
+                <h6>by <a href="#">Author</a></h6>
             </div>
         </div>
 
@@ -82,8 +96,9 @@
                 <img src="/img/logo.jpg">
             </div>
             <div class="category-product-info">
-                <h5>$99.99</h5>
-                <h6>Winter Jacket</h6>
+                <h4>$99.99</h4>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet architecto ducimus ipsa iure, molestiae numquam obcaecati optio perferendis quidem quis quod quos ratione sequi similique sit ullam vero voluptates.</h5>
+                <h6>by <a href="#">Author</a></h6>
             </div>
         </div>
 
@@ -92,8 +107,9 @@
                 <img src="/img/logo.jpg">
             </div>
             <div class="category-product-info">
-                <h5>$99.99</h5>
-                <h6>Winter Jacket</h6>
+                <h4>$99.99</h4>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet architecto ducimus ipsa iure, molestiae numquam obcaecati optio perferendis quidem quis quod quos ratione sequi similique sit ullam vero voluptates.</h5>
+                <h6>by <a href="#">Author</a></h6>
             </div>
         </div>
 
@@ -102,8 +118,9 @@
                 <img src="/img/logo.jpg">
             </div>
             <div class="category-product-info">
-                <h5>$99.99</h5>
-                <h6>Winter Jacket</h6>
+                <h4>$99.99</h4>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet architecto ducimus ipsa iure, molestiae numquam obcaecati optio perferendis quidem quis quod quos ratione sequi similique sit ullam vero voluptates.</h5>
+                <h6>by <a href="#">Author</a></h6>
             </div>
         </div>
 
@@ -112,8 +129,9 @@
                 <img src="/img/logo.jpg">
             </div>
             <div class="category-product-info">
-                <h5>$99.99</h5>
-                <h6>Winter Jacket</h6>
+                <h4>$99.99</h4>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet architecto ducimus ipsa iure, molestiae numquam obcaecati optio perferendis quidem quis quod quos ratione sequi similique sit ullam vero voluptates.</h5>
+                <h6>by <a href="#">Author</a></h6>
             </div>
         </div>
 
@@ -122,8 +140,9 @@
                 <img src="/img/logo.jpg">
             </div>
             <div class="category-product-info">
-                <h5>$99.99</h5>
-                <h6>Winter Jacket</h6>
+                <h4>$99.99</h4>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet architecto ducimus ipsa iure, molestiae numquam obcaecati optio perferendis quidem quis quod quos ratione sequi similique sit ullam vero voluptates.</h5>
+                <h6>by <a href="#">Author</a></h6>
             </div>
         </div>
 
@@ -132,8 +151,9 @@
                 <img src="/img/logo.jpg">
             </div>
             <div class="category-product-info">
-                <h5>$99.99</h5>
-                <h6>Winter Jacket</h6>
+                <h4>$99.99</h4>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet architecto ducimus ipsa iure, molestiae numquam obcaecati optio perferendis quidem quis quod quos ratione sequi similique sit ullam vero voluptates.</h5>
+                <h6>by <a href="#">Author</a></h6>
             </div>
         </div>
 
@@ -142,8 +162,9 @@
                 <img src="/img/logo.jpg">
             </div>
             <div class="category-product-info">
-                <h5>$99.99</h5>
-                <h6>Winter Jacket</h6>
+                <h4>$99.99</h4>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet architecto ducimus ipsa iure, molestiae numquam obcaecati optio perferendis quidem quis quod quos ratione sequi similique sit ullam vero voluptates.</h5>
+                <h6>by <a href="#">Author</a></h6>
             </div>
         </div>
 
@@ -152,8 +173,9 @@
                 <img src="/img/logo.jpg">
             </div>
             <div class="category-product-info">
-                <h5>$99.99</h5>
-                <h6>Winter Jacket</h6>
+                <h4>$99.99</h4>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet architecto ducimus ipsa iure, molestiae numquam obcaecati optio perferendis quidem quis quod quos ratione sequi similique sit ullam vero voluptates.</h5>
+                <h6>by <a href="#">Author</a></h6>
             </div>
         </div>
 
@@ -162,8 +184,9 @@
                 <img src="/img/logo.jpg">
             </div>
             <div class="category-product-info">
-                <h5>$99.99</h5>
-                <h6>Winter Jacket</h6>
+                <h4>$99.99</h4>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet architecto ducimus ipsa iure, molestiae numquam obcaecati optio perferendis quidem quis quod quos ratione sequi similique sit ullam vero voluptates.</h5>
+                <h6>by <a href="#">Author</a></h6>
             </div>
         </div>
 
@@ -187,9 +210,79 @@
 
 <hr>
 
+<div class="modal fade" id="BasketForm" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Basket</h4>
+                <button type="button" class="close" data-dismiss="modal">x</button>
+            </div>
+            <div class="modal-body text-left">
+                <div class="container">
+                    <div class="row">
+                        <div id="basket_table" class="basket-table">
+
+                            <div class="container">
+
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>Price</td>
+                                            <td>Amount</td>
+                                            <td>Summary</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><button class="btn">x</button></td>
+                                            <td><img src="/img/logo.jpg" alt=""></td>
+                                            <td>Iphone</td>
+                                            <td class="text-right">12000 UAH</td>
+                                            <td><input type="number" value="1" title="amount"></td>
+                                            <td class="text-right">12000 UAH</td>
+                                        </tr>
+                                        <tr>
+                                            <td><button class="btn">x</button></td>
+                                            <td><img src="/img/logo.jpg" alt=""></td>
+                                            <td>Iphone</td>
+                                            <td class="text-right">12000 UAH</td>
+                                            <td><input type="number" value="1" title="amount"></td>
+                                            <td class="text-right">12000 UAH</td>
+                                        </tr>
+                                        <tr>
+                                            <td><button class="btn">x</button></td>
+                                            <td><img src="/img/logo.jpg" alt=""></td>
+                                            <td>Iphone</td>
+                                            <td class="text-right">12000 UAH</td>
+                                            <td><input type="number" value="1" title="amount"></td>
+                                            <td class="text-right">12000 UAH</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr><td colspan="6" class="text-right"><button class="btn btn-info">Form order</button></td></tr>
+                                    </tfoot>
+                                </table>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script>
     function toggleBlock(block,slide) { "use strict";
         $("#"+slide).slideToggle("slow");
         $(block).find('i').toggleClass('icon-rotate');
+    }
+
+    function showBasket() {
+        $("#BasketForm").modal('show');
     }
 </script>
