@@ -1,4 +1,6 @@
 @media (max-width: 992px) {
+  .category .category-products .category-product-card {
+    max-width: 31%; }
   .site_name {
     display: none; }
   .col_basket {
@@ -8,4 +10,6 @@
   .catalogue button {
     width: 100%; }
   .catalogue-bottom button {
-    width: 100%; } }
+    width: 100%; }
+  .footer .form-input input {
+    width: 200px; } }

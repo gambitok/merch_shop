@@ -18,7 +18,6 @@
     ul {
       display: block;
       box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-      //padding: 15px;
       padding: 15px 0;
     }
     li {
@@ -56,22 +55,6 @@
       .category-product-image img {
         max-width: 100%;
         margin-bottom: 15px;
-      }
-      .category-product-amount {
-        height: 0;
-        span {
-          font-size: 12px;
-          width: 35px;
-          height: 35px;
-          color: #fff;
-          background: $purple;
-          padding: 10px;
-          border-radius: 2em;
-          position: relative;
-          top: -10px;
-          left: 85%;
-          text-align: center;
-        }
       }
       .category-product-info {
         margin-top: auto;
@@ -127,5 +110,13 @@
   select {
     border: none;
     font-size: 12px;
+  }
+}
+
+.category-footer {
+  margin-top: 30px;
+  padding-right: 10px;
+  a {
+    color: $purple;
   }
 }

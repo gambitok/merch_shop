@@ -1,3 +1,7 @@
+.catalogue {
+  border-bottom: 1px solid #f2f2f6;
+  box-shadow: 0 4px 2px -2px #f2f2f6; }
+
 main h2 {
   font-size: 25px;
   margin: 0; }

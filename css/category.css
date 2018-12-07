@@ -92,7 +92,7 @@ main {
   padding-bottom: 0; }
 
 .search button {
-  border: none; }
+  border: 1px solid; }
   .search button:focus {
     box-shadow: none !important; }
 
@@ -108,8 +108,25 @@ main {
     border: none;
     border-radius: 0 5px 5px 0; }
 
+.search .basket-product-amount {
+  height: 0; }
+  .search .basket-product-amount span {
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    background: #6d7fcc;
+    padding: 7px;
+    border-radius: 2em;
+    position: relative;
+    top: -14px;
+    left: 35px;
+    font-weight: bold;
+    text-align: center; }
+
 .navbar {
-  color: #6c757d; }
+  color: #6c757d;
+  margin: 0; }
   .navbar .navbar-divider {
     border-right: 1px solid darkgray;
     padding-right: 15px; }
@@ -142,7 +159,7 @@ main {
     padding-bottom: 15px; }
     .footer .footer-above .row {
       background: #fff; }
-    .footer .footer-above .col-4 {
+    .footer .footer-above .col-12 {
       text-align: center;
       padding-left: 75px;
       padding-right: 75px; }
@@ -256,8 +273,8 @@ main {
 .btn-gplus {
   background-color: #dd4b39 !important; }
 
-.btn-li {
-  background-color: #0082ca !important; }
+.btn-disco {
+  background-color: #6d7fcc !important; }
 
 .btn-pint {
   background-color: #ec4a89 !important; }
@@ -332,20 +349,6 @@ main {
     .category .category-products .category-product-card .category-product-image img {
       max-width: 100%;
       margin-bottom: 15px; }
-    .category .category-products .category-product-card .category-product-amount {
-      height: 0; }
-      .category .category-products .category-product-card .category-product-amount span {
-        font-size: 12px;
-        width: 35px;
-        height: 35px;
-        color: #fff;
-        background: #6d7fcc;
-        padding: 10px;
-        border-radius: 2em;
-        position: relative;
-        top: -10px;
-        left: 85%;
-        text-align: center; }
     .category .category-products .category-product-card .category-product-info {
       margin-top: auto; }
       .category .category-products .category-product-card .category-product-info a {
@@ -385,3 +388,9 @@ main {
   .category-header select {
     border: none;
     font-size: 12px; }
+
+.category-footer {
+  margin-top: 30px;
+  padding-right: 10px; }
+  .category-footer a {
+    color: #6d7fcc; }
