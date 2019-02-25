@@ -1,3 +1,5 @@
+@import "style.css";
+
 .icon-rotate {
   transform: rotate(180deg); }
 
@@ -57,15 +59,24 @@
       }
       .category-product-info {
         margin-top: auto;
-        h5 {
+        a {
+          color: #6D7FCC;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        h4 {
           font-size: 12px;
         }
-        h6 {
+        h5 {
           color: darkgray;
           font-size: 12px;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
+        }
+        h6 {
+          font-size: 12px;
         }
       }
     }

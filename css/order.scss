@@ -1,0 +1,92 @@
+@import "style.scss";
+
+.basket {
+  padding: 30px 0;
+  h1 {
+    text-align: center;
+  }
+  table {
+    border-top: unset;
+    margin-top: 30px;
+    thead {
+      tr {
+        td {
+          border-bottom: 1px solid #6d7fcc;
+        }
+      }
+    }
+    tfoot {
+      tr {
+        td {
+          border-top: 1px solid #6d7fcc;
+        }
+      }
+    }
+    thead, tfoot {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    tr {
+      .product-name {
+        max-width: 500px;
+      }
+      td {
+        border:none;
+        vertical-align: middle;
+        p {
+          font-size: 20px;
+          color: #6d7fcc;
+          font-weight: bold;
+        }
+        span {
+          font-weight: bold;
+        }
+        img {
+          max-width: 100px;
+        }
+        .btn-minus {
+           border-radius: .25em 0 0 .25em;
+            background: #f1f1f1;
+        }
+        .btn-plus {
+          border-radius: 0 .25em .25em 0;
+          background: #f1f1f1;
+        }
+        button {
+          width: 30px;
+          height: 40px;
+        }
+        input {
+          width: 60px;
+          height: 40px;
+          background: #f1f1f1;
+          text-align: center;
+          border-left: 1px solid #ddd;
+          border-right: 1px solid #ddd;
+          border-top: none;
+          border-bottom: none;
+        }
+      }
+    }
+  }
+  .btn-check {
+    float: right;
+    text-transform: uppercase;
+    width: auto;
+    margin-top: 15px;
+  }
+}
+
+.basket-min {
+  .price-list {
+    li {
+      display: block;
+    }
+    span{
+      float: left;
+    }
+    b {
+      float: right;
+    }
+  }
+}
