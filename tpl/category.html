@@ -1,6 +1,11 @@
 <div class="row category-header">
     <div class="col-6">
         <h2>Boyfriend Greeting Cards <span>52269 results</span></h2>
+        <!--<button class="btn btn-primary" onclick="showLoader()">Loader</button>-->
+        <div id="category-list">
+            <a onclick="closeCategory(this);" class="btn btn-primary btn-sm">Men's <i class="fa fa-remove"></i></a>
+            <a onclick="closeCategory(this);" class="btn btn-primary btn-sm">WoMen's <i class="fa fa-remove"></i></a>
+        </div>
     </div>
     <div class="col-6 text-right">
         <select title="Sort by">
@@ -14,20 +19,30 @@
 <div class="row category">
 
     <div class="col-2 category-sidebar">
+
         <div class="category-sidebar__department">
             <div class="sidebar-title">
                 <p>Department</p> <a class="sidebar__department-arrow" onclick="toggleBlock(this,'department_list')"><i class="fa fa-angle-up"></i></a>
             </div>
             <ul id="department_list" class="sidebar-list list-inline">
-                <li>All departments</li>
-                <li>Men's</li>
-                <li>Women's</li>
-                <li>Kids</li>
-                <li>Device Cases</li>
-                <li>Wall Art</li>
-                <li>Home decor</li>
-                <li>Stationary</li>
-                <li>Bags</li>
+                <li>
+                    <label class="container_check">All departments
+                        <input name="check-item" type="checkbox" class="check-item">
+                        <span class="checkmark"></span>
+                    </label>
+                </li>
+                <li>
+                    <label class="container_check">Men's
+                        <input name="check-item" type="checkbox" class="check-item">
+                        <span class="checkmark"></span>
+                    </label>
+                </li>
+                <li>
+                    <label class="container_check">Women's
+                        <input name="check-item" type="checkbox" class="check-item">
+                        <span class="checkmark"></span>
+                    </label>
+                </li>
             </ul>
         </div>
 
@@ -36,13 +51,46 @@
                 <p>Product</p> <a class="sidebar__product-arrow" onclick="toggleBlock(this,'product_list')"><i class="fa fa-angle-up"></i></a>
             </div>
             <ul id="product_list" class="sidebar-list list-inline">
-                <li>All stationary</li>
-                <li>Greeting cards</li>
-                <li>Postcards</li>
-                <li>Stickers</li>
-                <li>Spiral notebooks</li>
+                <li>
+                    <label class="container_radio">  All stationary
+                        <input name="radio-item" type="radio" class="radio-item">
+                        <span class="radiomark"></span>
+                    </label>
+                </li>
+                <li>
+                    <label class="container_radio">  Greeting cards
+                        <input name="radio-item" type="radio" class="radio-item">
+                        <span class="radiomark"></span>
+                    </label>
+                </li>
+                <li>
+                    <label class="container_radio">  Postcards
+                        <input name="radio-item" type="radio" class="radio-item">
+                        <span class="radiomark"></span>
+                    </label>
+                </li>
             </ul>
         </div>
+
+        <div class="category-sidebar__prices">
+            <div class="sidebar-title">
+                <p>Prices</p> <a class="sidebar__price-arrow" onclick="toggleBlock(this,'price_list')"><i class="fa fa-angle-up"></i></a>
+            </div>
+            <ul id="price_list" class="sidebar-list list-inline">
+                <li>
+                    <label for="min_price">From</label>
+                    <input id="min_price" class="form-control" type="number" min="0" name="min_price" title="input min price" value="0">
+                </li>
+                <li>
+                    <label for="max_price">To</label>
+                    <input  id="max_price" class="form-control" type="number" min="0" name="max_price" title="input max price" value="0">
+                </li>
+                <li>
+                    <button class="btn btn-outline-primary" style="width: 100%">OK</button>
+                </li>
+            </ul>
+        </div>
+
     </div>
 
     <div class="col-10 category-products">
@@ -199,9 +247,35 @@
 
 <hr>
 
+<!-- Modal -->
+<div class="modal fade" id="ModalLoader" tabindex="-1" role="dialog" aria-labelledby="ModalLoaderTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ModalLoaderTitle">Loading...</h5>
+            </div>
+            <div class="modal-body">
+                <div class="loader"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script>
     function toggleBlock(block,slide) { "use strict";
         $("#"+slide).slideToggle("slow");
         $(block).find('i').toggleClass('icon-rotate');
+    }
+
+    function showLoader() {
+        $("#ModalLoader").modal("show");
+    }
+
+    function closeCategory(a) {
+        $(a).html("");
+    }
+
+    function addCategory(name) {
+        $("#category-list").html("<a onclick=\"closeCategory(this);\" class=\"btn btn-primary btn-sm\">"+name+" <i class=\"fa fa-remove\"></i></a>");
     }
 </script>

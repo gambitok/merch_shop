@@ -1,4 +1,124 @@
 @import url(style.css);
+.loader {
+  margin: 0 auto;
+  /*center*/
+  border: 16px solid #f3f3f3;
+  /* Light grey */
+  border-top: 16px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+.container_radio {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.container_radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer; }
+
+.radiomark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  background-color: #eee;
+  border-radius: 50%; }
+
+.container_radio:hover input ~ .radiomark {
+  background-color: #ccc; }
+
+.container_radio input:checked ~ .radiomark {
+  background-color: #f44336; }
+
+.radiomark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+.container_radio input:checked ~ .radiomark:after {
+  display: block; }
+
+.container_radio .radiomark:after {
+  top: 3px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff; }
+
+.container_check {
+  margin: 0;
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.container_check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0; }
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  background-color: #eee; }
+
+.container_check:hover input ~ .checkmark {
+  background-color: #ccc; }
+
+.container_check input:checked ~ .checkmark {
+  background-color: lightblue; }
+
+.container_check input:disabled ~ .checkmark {
+  background-color: #ccc; }
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+.container_check input:checked ~ .checkmark:after {
+  display: block; }
+
+.container_check .checkmark:after {
+  left: 5px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
 .icon-rotate {
   transform: rotate(180deg); }
 

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("#main").load("tpl/order-min.html",function() {
+    $("#main").load("tpl/category.html",function() {
         startOwl();
     });
     // $("body").load("tpl/room.html",function () {
