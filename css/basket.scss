@@ -1,0 +1,41 @@
+.basket {
+  th {
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 1em;
+    font-style: italic;
+  }
+  .product-item {
+
+    .product-item__image {
+      width: 200px;
+      img {
+        max-width: 200px;
+      }
+    }
+
+    .product-item__info {
+      width: 500px;
+      vertical-align: middle;
+      h2 {
+        font-size: 1.5em;
+      }
+      h3 {
+        font-size: 1em;
+      }
+    }
+
+    .product-item__quantity {
+      input {
+        width: 50px;
+      }
+    }
+
+    .product-item__price {
+      text-align: right;
+    }
+
+  }
+}
+

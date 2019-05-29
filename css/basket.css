@@ -1,0 +1,25 @@
+.basket th {
+  text-transform: uppercase; }
+
+.basket p {
+  font-size: 1em;
+  font-style: italic; }
+
+.basket .product-item .product-item__image {
+  width: 200px; }
+  .basket .product-item .product-item__image img {
+    max-width: 200px; }
+
+.basket .product-item .product-item__info {
+  width: 500px;
+  vertical-align: middle; }
+  .basket .product-item .product-item__info h2 {
+    font-size: 1.5em; }
+  .basket .product-item .product-item__info h3 {
+    font-size: 1em; }
+
+.basket .product-item .product-item__quantity input {
+  width: 50px; }
+
+.basket .product-item .product-item__price {
+  text-align: right; }

@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $("#main").load("tpl/category.html",function() {
+    $("#main").load("tpl/checkout.html",function() {
         startOwl();
     });
     // $("body").load("tpl/room.html",function () {

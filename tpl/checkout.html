@@ -1,0 +1,377 @@
+<div class="container-fluid">
+    <div class="row content">
+        <!--<div class="col-md-7 shipping">-->
+            <!--<div class="row">-->
+                <!--<div class="col-12 history">-->
+                    <!--<ul class="list">-->
+                        <!--<li class="list__item">-->
+                            <!--<a href="#" class="list__link">Cart</a>-->
+                        <!--</li>-->
+                        <!--<li class="list__item">-->
+                            <!--<a href="#" class="list__link list__link-active">Customer information</a>-->
+                        <!--</li>-->
+                        <!--<li class="list__item">-->
+                            <!--<a href="#" class="list__link">Shipping method</a>-->
+                        <!--</li>-->
+                        <!--<li class="list__item">-->
+                            <!--<a href="#" class="list__link">Payment method</a>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row">-->
+                <!--<div class="col-12">-->
+                    <!--<div class="checkout">-->
+                        <!--<h6 class="checkout__title">Express checkout</h6>-->
+                        <!--<div class="checkout__paypal"><div id="zoid-paypal-buttons-2a4140ecce_mdc6mzy6mze" class="paypal-buttons paypal-buttons-context-iframe paypal-buttons-label-paypal paypal-buttons-layout-vertical" style="height: 81px; transition: all 0.5s ease-in-out 0s;"><style>-->
+                            <!--#zoid-paypal-buttons-2a4140ecce_mdc6mzy6mze {-->
+                                <!--position: relative;-->
+                                <!--display: inline-block;-->
+                                <!--width: 100%;-->
+                                <!--min-width: 200px;-->
+                                <!--max-width: 750px;-->
+                                <!--font-size: 0;-->
+                            <!--}-->
+
+                            <!--#zoid-paypal-buttons-2a4140ecce_mdc6mzy6mze > iframe {-->
+                                <!--position: absolute;-->
+                                <!--top: 0;-->
+                                <!--left: 0;-->
+                                <!--width: 100%;-->
+                                <!--height: 100%;-->
+                            <!--}-->
+
+                            <!--#zoid-paypal-buttons-2a4140ecce_mdc6mzy6mze > iframe.component-frame {-->
+                                <!--z-index: 100;-->
+                            <!--}-->
+
+                            <!--#zoid-paypal-buttons-2a4140ecce_mdc6mzy6mze > iframe.prerender-frame {-->
+                                <!--transition: opacity .2s linear;-->
+                                <!--z-index: 200;-->
+                            <!--}-->
+
+                            <!--#zoid-paypal-buttons-2a4140ecce_mdc6mzy6mze > iframe.visible {-->
+                                <!--opacity: 1;-->
+                            <!--}-->
+
+                            <!--#zoid-paypal-buttons-2a4140ecce_mdc6mzy6mze > iframe.invisible {-->
+                                <!--opacity: 0;-->
+                                <!--pointer-events: none;-->
+                            <!--}-->
+                        <!--</style><iframe allowtransparency="true" title="paypal_buttons" allowpaymentrequest="allowpaymentrequest" scrolling="no" id="jsx-iframe-04a7932aae" class="component-frame visible" style="background-color: transparent; border: none;" name="__zoid__paypal_buttons__eyJ1aWQiOiJ6b2lkLXBheXBhbC1idXR0b25zLTJhNDE0MGVjY2VfbWRjNm16eTZtemUiLCJjb250ZXh0IjoiaWZyYW1lIiwidmVyc2lvbiI6IjlfMF8yNSIsImNoaWxkRG9tYWluIjoiaHR0cHM6Ly93d3cuc2FuZGJveC5wYXlwYWwuY29tIiwicGFyZW50RG9tYWluIjoiaHR0cHM6Ly9zd2VhcndhbGtlci5naXRodWIuaW8iLCJ0YWciOiJwYXlwYWwtYnV0dG9ucyIsInBhcmVudCI6eyJ0eXBlIjoicGFyZW50IiwiZGlzdGFuY2UiOjB9LCJwcm9wcyI6eyJ0eXBlIjoicmF3IiwidmFsdWUiOiJ7XCJzdHlsZVwiOntcImxhYmVsXCI6XCJwYXlwYWxcIixcImxheW91dFwiOlwidmVydGljYWxcIixcImNvbG9yXCI6XCJnb2xkXCIsXCJzaGFwZVwiOlwicmVjdFwiLFwidGFnbGluZVwiOmZhbHNlfSxcImNvbXBvbmVudHNcIjpbXCJidXR0b25zXCJdLFwibG9jYWxlXCI6e1wiY291bnRyeVwiOlwiUlVcIixcImxhbmdcIjpcInJ1XCJ9LFwiY3JlYXRlT3JkZXJcIjp7XCJfX3R5cGVfX1wiOlwiY3Jvc3NfZG9tYWluX2Z1bmN0aW9uXCIsXCJfX3ZhbF9fXCI6e1wiaWRcIjpcIjk1NjYwNjFmZGZfbWRjNm16eTZtemVcIixcIm5hbWVcIjpcImNyZWF0ZU9yZGVyXCJ9fSxcIm9uQXBwcm92ZVwiOntcIl9fdHlwZV9fXCI6XCJjcm9zc19kb21haW5fZnVuY3Rpb25cIixcIl9fdmFsX19cIjp7XCJpZFwiOlwiNzU4OTBhNGYzYl9tZGM2bXp5Nm16ZVwiLFwibmFtZVwiOlwib25BcHByb3ZlXCJ9fSxcIm9uQ2FuY2VsXCI6e1wiX190eXBlX19cIjpcImNyb3NzX2RvbWFpbl9mdW5jdGlvblwiLFwiX192YWxfX1wiOntcImlkXCI6XCJjNTI0ZWFjYmFiX21kYzZtenk2bXplXCIsXCJuYW1lXCI6XCJvbkNhbmNlbFwifX0sXCJvbkNsaWNrXCI6e1wiX190eXBlX19cIjpcImNyb3NzX2RvbWFpbl9mdW5jdGlvblwiLFwiX192YWxfX1wiOntcImlkXCI6XCI3OTNlYTQ0YTQzX21kYzZtenk2bXplXCIsXCJuYW1lXCI6XCJvbkNsaWNrXCJ9fSxcIm9uUmVuZGVyXCI6e1wiX190eXBlX19cIjpcImNyb3NzX2RvbWFpbl9mdW5jdGlvblwiLFwiX192YWxfX1wiOntcImlkXCI6XCI1OWY2MzVkMzFiX21kYzZtenk2bXplXCIsXCJuYW1lXCI6XCJvblJlbmRlclwifX0sXCJnZXRQcmVyZW5kZXJEZXRhaWxzXCI6e1wiX190eXBlX19cIjpcImNyb3NzX2RvbWFpbl9mdW5jdGlvblwiLFwiX192YWxfX1wiOntcImlkXCI6XCI3MjYzODJiYmFiX21kYzZtenk2bXplXCIsXCJuYW1lXCI6XCJnZXRQcmVyZW5kZXJEZXRhaWxzXCJ9fSxcImNsaWVudElEXCI6XCJBWkR4akRTY0ZwUXRqV1RPVXRXS2J5Tl9iRHQ0T2dxYUY0ZVlYbGV3ZkJQNC04YXFYM1BpVjhlMUdXVTZsaUIyQ1VYbGtBNTlrSlhFN002UlwiLFwiZW5hYmxlVGhyZWVEb21haW5TZWN1cmVcIjpmYWxzZSxcImNvcnJlbGF0aW9uSURcIjpcImM3NjhjODMwZTcxNzZcIixcInNlc3Npb25JRFwiOlwiNGFjZmYyOTIyNV9tZGM2bXp5Nm16ZVwiLFwiYnV0dG9uU2Vzc2lvbklEXCI6XCJlODZiNGFhODY3X21kYzZtenk2bXplXCIsXCJlbnZcIjpcInNhbmRib3hcIixcImZ1bmRpbmdFbGlnaWJpbGl0eVwiOntcInBheXBhbFwiOntcImVsaWdpYmxlXCI6dHJ1ZSxcImd1ZXN0XCI6ZmFsc2UsXCJyZW1lbWJlcmVkXCI6ZmFsc2V9LFwidmVubW9cIjp7XCJlbGlnaWJsZVwiOmZhbHNlLFwiZ3Vlc3RcIjpmYWxzZSxcInJlbWVtYmVyZWRcIjpmYWxzZX0sXCJjcmVkaXRcIjp7XCJlbGlnaWJsZVwiOmZhbHNlLFwiZ3Vlc3RcIjpmYWxzZSxcInJlbWVtYmVyZWRcIjpmYWxzZX0sXCJjYXJkXCI6e1wiZWxpZ2libGVcIjp0cnVlLFwiZ3Vlc3RcIjpmYWxzZSxcInJlbWVtYmVyZWRcIjpmYWxzZSxcInZlbmRvcnNcIjp7XCJ2aXNhXCI6e1wiZWxpZ2libGVcIjp0cnVlfSxcIm1hc3RlcmNhcmRcIjp7XCJlbGlnaWJsZVwiOnRydWV9LFwiYW1leFwiOntcImVsaWdpYmxlXCI6dHJ1ZX0sXCJkaXNjb3ZlclwiOntcImVsaWdpYmxlXCI6ZmFsc2V9LFwiaGlwZXJcIjp7XCJlbGlnaWJsZVwiOmZhbHNlfSxcImVsb1wiOntcImVsaWdpYmxlXCI6ZmFsc2V9LFwiamNiXCI6e1wiZWxpZ2libGVcIjpmYWxzZX0sXCJjdXBcIjp7XCJlbGlnaWJsZVwiOmZhbHNlfX0sXCJicmFuZGVkXCI6dHJ1ZX0sXCJpZGVhbFwiOntcImVsaWdpYmxlXCI6ZmFsc2UsXCJndWVzdFwiOmZhbHNlLFwicmVtZW1iZXJlZFwiOmZhbHNlfSxcInNlcGFcIjp7XCJlbGlnaWJsZVwiOmZhbHNlLFwiZ3Vlc3RcIjpmYWxzZSxcInJlbWVtYmVyZWRcIjpmYWxzZX0sXCJiYW5jb250YWN0XCI6e1wiZWxpZ2libGVcIjpmYWxzZSxcImd1ZXN0XCI6ZmFsc2UsXCJyZW1lbWJlcmVkXCI6ZmFsc2V9LFwiZ2lyb3BheVwiOntcImVsaWdpYmxlXCI6ZmFsc2UsXCJndWVzdFwiOmZhbHNlLFwicmVtZW1iZXJlZFwiOmZhbHNlfSxcInNvZm9ydFwiOntcImVsaWdpYmxlXCI6ZmFsc2UsXCJndWVzdFwiOmZhbHNlLFwicmVtZW1iZXJlZFwiOmZhbHNlfSxcImVwc1wiOntcImVsaWdpYmxlXCI6ZmFsc2UsXCJndWVzdFwiOmZhbHNlLFwicmVtZW1iZXJlZFwiOmZhbHNlfSxcIm15YmFua1wiOntcImVsaWdpYmxlXCI6ZmFsc2UsXCJndWVzdFwiOmZhbHNlLFwicmVtZW1iZXJlZFwiOmZhbHNlfSxcInAyNFwiOntcImVsaWdpYmxlXCI6ZmFsc2UsXCJndWVzdFwiOmZhbHNlLFwicmVtZW1iZXJlZFwiOmZhbHNlfSxcInppbXBsZXJcIjp7XCJlbGlnaWJsZVwiOmZhbHNlLFwiZ3Vlc3RcIjpmYWxzZSxcInJlbWVtYmVyZWRcIjpmYWxzZX0sXCJ3ZWNoYXRwYXlcIjp7XCJlbGlnaWJsZVwiOmZhbHNlLFwiZ3Vlc3RcIjpmYWxzZSxcInJlbWVtYmVyZWRcIjpmYWxzZX19LFwicGxhdGZvcm1cIjpcImRlc2t0b3BcIixcInJlbWVtYmVyZWRcIjpbXSxcInJlbWVtYmVyXCI6e1wiX190eXBlX19cIjpcImNyb3NzX2RvbWFpbl9mdW5jdGlvblwiLFwiX192YWxfX1wiOntcImlkXCI6XCIwNjRhYWJlZTU1X21kYzZtenk2bXplXCIsXCJuYW1lXCI6XCJyZW1lbWJlclwifX0sXCJjdXJyZW5jeVwiOlwiVVNEXCIsXCJpbnRlbnRcIjpcImNhcHR1cmVcIixcImNvbW1pdFwiOnRydWUsXCJ2YXVsdFwiOmZhbHNlLFwiZGlzYWJsZUZ1bmRpbmdcIjpbXSxcImRpc2FibGVDYXJkXCI6W10sXCJtZXJjaGFudElEXCI6W10sXCJjc3BcIjp7fSxcImRlYnVnXCI6ZmFsc2UsXCJ0ZXN0XCI6e1wiYWN0aW9uXCI6XCJjaGVja291dFwifX0ifSwiZXhwb3J0cyI6IntcImluaXRcIjp7XCJfX3R5cGVfX1wiOlwiY3Jvc3NfZG9tYWluX2Z1bmN0aW9uXCIsXCJfX3ZhbF9fXCI6e1wiaWRcIjpcIjdhMjliMDMwNjlfbWRjNm16eTZtemVcIixcIm5hbWVcIjpcInJcIn19LFwiY2xvc2VcIjp7XCJfX3R5cGVfX1wiOlwiY3Jvc3NfZG9tYWluX2Z1bmN0aW9uXCIsXCJfX3ZhbF9fXCI6e1wiaWRcIjpcIjFjYTg1ODA1NzhfbWRjNm16eTZtemVcIixcIm5hbWVcIjpcImNsb3NlXCJ9fSxcImNoZWNrQ2xvc2VcIjp7XCJfX3R5cGVfX1wiOlwiY3Jvc3NfZG9tYWluX2Z1bmN0aW9uXCIsXCJfX3ZhbF9fXCI6e1wiaWRcIjpcIjgzM2Y4NzE4ODBfbWRjNm16eTZtemVcIixcIm5hbWVcIjpcImNoZWNrQ2xvc2VcIn19LFwicmVzaXplXCI6e1wiX190eXBlX19cIjpcImNyb3NzX2RvbWFpbl9mdW5jdGlvblwiLFwiX192YWxfX1wiOntcImlkXCI6XCI3OTAwNWMxMWY1X21kYzZtenk2bXplXCIsXCJuYW1lXCI6XCJyZXNpemVcIn19LFwib25FcnJvclwiOntcIl9fdHlwZV9fXCI6XCJjcm9zc19kb21haW5fZnVuY3Rpb25cIixcIl9fdmFsX19cIjp7XCJpZFwiOlwiNDQxYzZiOWMyZV9tZGM2bXp5Nm16ZVwiLFwibmFtZVwiOlwidFwifX19In0=__"></iframe></div></div>-->
+                        <!--<a href="#" class="checkout__link">Use your account</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row">-->
+                <!--<div class="col-12 hr">-->
+                    <!--<p class="hr__text">OR</p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<form action="" class="row form">-->
+                <!--<div class="col-md-12">-->
+                    <!--<div class="form-row contact-info">-->
+                        <!--<div class="col-md-6">-->
+                            <!--<h4 class="form__title">Contact information</h4>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-6 form-group">-->
+                            <!--<div class="form__checkbox">-->
+                                <!--<input type="checkbox" id="check-reg" class="contact-info__checkbox contact-info__checkbox-checkout">-->
+                                <!--<label for="check-reg">Register</label>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-6 form-group">-->
+                            <!--<div class="form__input-group">-->
+                                <!--<label for="contact-email">Email or mobile phone number</label>-->
+                                <!--<input type="email" id="contact-email" class="form__input contact-info__input-email">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-3 form-group">-->
+                            <!--<div class="form__input-group">-->
+                                <!--<label for="contact-pass">Password</label>-->
+                                <!--<input type="password" id="contact-pass" class="form__input contact-info__input-pass">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-3 form-group">-->
+                            <!--<div class="form__input-group">-->
+                                <!--<label for="contact-copass">Confirm password</label>-->
+                                <!--<input type="password" id="contact-copass" class="form__input contact-info__input-copass">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-12 form-group">-->
+                            <!--<div class="form__checkbox">-->
+                                <!--<input type="checkbox" id="send-news" class="contact-info__checkbox contact-info__checkbox-send">-->
+                                <!--<label for="send-news">Keep me up to date on news and exclusive offers</label>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-row shipping-address">-->
+                        <!--<div class="col-12">-->
+                            <!--<h4 class="form__title">Shipping address</h4>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-6 form-group">-->
+                            <!--<div class="form__input-group">-->
+                                <!--<label for="contact-pass">First name (optional)</label>-->
+                                <!--<input type="email" class="form__input shipping-address__input-first">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-6 form-group">-->
+                            <!--<div class="form__input-group">-->
+                                <!--<label for="contact-pass">Last name</label>-->
+                                <!--<input type="email" class="form__input shipping-address__input-last">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-12 form-group">-->
+                            <!--<div class="form__input-group">-->
+                                <!--<label for="contact-pass">Address</label>-->
+                                <!--<input type="email" class="form__input shipping-address__input-address">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-12 form-group">-->
+                            <!--<div class="form__input-group">-->
+                                <!--<label for="contact-pass">Apartment, suite, etc. (optional)</label>-->
+                                <!--<input type="email" class="form__input shipping-address__input-apartment">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-12 form-group">-->
+                            <!--<div class="form__input-group">-->
+                                <!--<label for="contact-pass">Password</label>-->
+                                <!--<input type="email" class="form__input shipping-address__input-city">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-6 form-group">-->
+                            <!--<div class="form__input-group">-->
+                                <!--<label for="dropdown-country">Country</label>-->
+                                <!--<select class="form-control form__dropdown" id="dropdown-country">-->
+                                    <!--<option>1</option>-->
+                                    <!--<option>2</option>-->
+                                    <!--<option>3</option>-->
+                                    <!--<option>4</option>-->
+                                    <!--<option>5</option>-->
+                                <!--</select>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-6 form-group">-->
+                            <!--<div class="form__input-group">-->
+                                <!--<label for="postal-code">Postal code</label>-->
+                                <!--<input type="email" id="postal-code" class="form__input shipping-address__input-code">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-row">-->
+                        <!--<div class="col-md-6 form-action">-->
+                            <!--<a href="#" class="form__link-return">Return to cart</a>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-6 form-action">-->
+                            <!--<a href="#" class="btn btn-lg active form__btn" role="button" aria-pressed="true">Continue to shipping method</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</form>-->
+        <!--</div>-->
+
+        <!--<div class="col-md-7 shipping-method">-->
+            <!--<div class="row">-->
+                <!--<div class="col-12 history">-->
+                <!--<ul class="list">-->
+                    <!--<li class="list__item">-->
+                        <!--<a href="#" class="list__link">Cart</a>-->
+                    <!--</li>-->
+                    <!--<li class="list__item">-->
+                    <!--<a href="#" class="list__link">Customer information</a>-->
+                    <!--</li>-->
+                    <!--<li class="list__item">-->
+                        <!--<a href="#" class="list__link list__link-active">Shipping method</a>-->
+                    <!--</li>-->
+                    <!--<li class="list__item">-->
+                        <!--<a href="#" class="list__link">Payment method</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row">-->
+                <!--<div class="col-12">-->
+                    <!--<h2>Shipping method</h2>-->
+
+                    <!--<div class="radio-block">-->
+                        <!--<div class="custom-control custom-radio">-->
+                            <!--<input type="radio" class="custom-control-input" id="defaultGroupExample1" name="groupOfDefaultRadios">-->
+                            <!--<label class="custom-control-label" for="defaultGroupExample1">Standart Large Parcel (5-14 working days)</label>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="radio-block">-->
+                        <!--<div class="custom-control custom-radio">-->
+                            <!--<input type="radio" class="custom-control-input" id="defaultGroupExample2" name="groupOfDefaultRadios" checked>-->
+                            <!--<label class="custom-control-label" for="defaultGroupExample2">Standart Large Parcel (5-14 working days)</label>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="form-row">-->
+                        <!--<div class="col-md-6 form-action">-->
+                            <!--<a href="#" class="form__link-return">Return to cart</a>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-6 form-action">-->
+                            <!--<a href="#" class="btn btn-lg active form__btn" role="button" aria-pressed="true">Continue to shipping method</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <div class="col-md-7 payment-method">
+            <div class="row">
+                <div class="col-12 history">
+                    <ul class="list">
+                        <li class="list__item">
+                            <a href="#" class="list__link">Cart</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">Customer information</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">Shipping method</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link  list__link-active">Payment method</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h2>Payment method</h2>
+                    <h3>All transactions are secure and encrypted.</h3>
+                    <div class="form-method">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="method1" name="method1">
+                                    <label class="custom-control-label" for="method1">Credit card</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-group">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Card number">
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><i class="fa fa-lock"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <input class="form-control" type="text" title="card name" placeholder="Cardholder name">
+                                </div>
+                                <div class="col-3">
+                                    <input class="form-control" type="text" title="card mm" placeholder="MM / YY">
+                                </div>
+                                <div class="col-3">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="CVV">
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><i class="fa fa-question"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="method2" name="method2">
+                                    <label class="custom-control-label" for="method2">PayPal</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Billing address</h2>
+                    <div class="form-address">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="billingAddress1" name="billingAddress1">
+                                    <label class="custom-control-label" for="billingAddress1">Same as shipping address</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="billingAddress2" name="billingAddress2">
+                                    <label class="custom-control-label" for="billingAddress2">Use a different billing address</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Remember me</h2>
+                    <div class="form-remeber">
+                        <div class="row">
+                            <div class="col-12">
+                                <input id="save_info" type="checkbox" title="check">
+                                <label for="save_info">Save my information for a faster checkout</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-6 form-action">
+                            <a href="#" class="form__link-return">Return to cart</a>
+                        </div>
+                        <div class="col-md-6 form-action">
+                            <a href="#" class="btn btn-lg active form__btn" role="button" aria-pressed="true">Continue to shipping method</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-5 cart">
+            <ul class="cart-list">
+                <li class="cart-list__item">
+                    <div class="cart-list__image-group">
+                        <span class="cart-list__quantity">7</span>
+                        <img src="/img/png_logo.png" alt="cart image" class="cart-list__image">
+                    </div>
+                    <h5 class="cart-list__title"> Ari Socket</h5>
+                    <span class="cart-list__price">Free</span>
+                </li>
+                <li class="cart-list__item">
+                    <div class="cart-list__image-group">
+                        <span class="cart-list__quantity">7</span>
+                        <img src="/img/png_logo.png" alt="cart image" class="cart-list__image">
+                    </div>
+                    <h5 class="cart-list__title"> Ari Socket</h5>
+                    <span class="cart-list__price">Free</span>
+                </li>
+            </ul>
+            <hr>
+            <div class="input-group cart-discount">
+                <input type="text" class="form-control form-control-lg cart-discount__input" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <button class="btn disabled btn-secondary btn-lg cart-discount__btn" type="button">Button</button>
+            </div>
+            <hr>
+            <ul class="cart-prices-list">
+                <li class="cart-prices-list__item">
+                    <h5 class="cart-prices-list__title">Subtotal</h5>
+                    <span class="cart-prices-list__price">$48.00</span>
+                </li>
+                <li class="cart-prices-list__item">
+                    <h5 class="cart-prices-list__title">Shipping</h5>
+                    <span class="cart-prices-list__price">$48.00</span>
+                </li>
+            </ul>
+            <hr>
+            <div class="cart-total">
+                <h4 class="cart-total__title">Total</h4>
+                <p class="cart-total__currency">USD</p>
+                <span class="cart-total__price">$48.00</span>
+            </div>
+        </div>
+    </div>
+</div>
