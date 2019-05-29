@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $("#main").load("tpl/checkout.html",function() {
+    $("#main").load("tpl/basket.html",function() {
         startOwl();
     });
     // $("body").load("tpl/room.html",function () {
@@ -52,13 +52,28 @@ function menuToggle(a) {
     switch(id) {
         case 'menu-home': content.load('/tpl/room/home.html'); break;
         case 'menu-design': content.load('/tpl/room/design.html'); break;
-        case 'menu-dash': content.load('/tpl/room/dash.html', function () {
-            $('.js-example-basic-single').select2();
-        }); break;
+        case 'menu-dash': content.load('/tpl/room/dash.html', function () { $('.js-example-basic-single').select2(); }); break;
         case 'menu-stats': content.load('/tpl/room/stats.html'); break;
         case 'menu-tools': content.load('/tpl/room/tools.html'); break;
         case 'menu-account': content.load('/tpl/room/account.html'); break;
         case 'menu-reg': content.load('/tpl/room/reg.html'); break;
         default: console.log('error'); break;
+    }
+}
+
+function historyToggle(page,a) {
+    var content=$("#checkout");
+    content.load("/tpl/checkout/"+page+".html");
+
+    if (a!==undefined) {
+        $(".list__link").each(function() {
+            $(this).removeClass('list__link-active');
+        });
+        $(a).toggleClass('list__link-active');
+    } else {
+        $(".list__link").each(function() {
+            $(this).removeClass('list__link-active');
+        });
+        $("#cart-link").toggleClass('list__link-active');
     }
 }

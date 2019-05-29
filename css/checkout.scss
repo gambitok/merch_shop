@@ -58,9 +58,8 @@ $secondary: #FFF4F6;
   align-items: stretch;
 }
 
-.shipping {
-  padding-top: 100px;
-  padding-bottom: 100px;
+.history {
+  padding: 10px 30px;
   .list {
     padding-left: 0;
     list-style: none;
@@ -76,8 +75,40 @@ $secondary: #FFF4F6;
     }
   }
 
-  .history {
-    padding: 10px 30px;
+}
+
+.radio-content {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+  margin: 30px 0;
+}
+
+.radio-block {
+  .custom-radio .custom-control-input:checked~.custom-control-label::before {
+    background-color: $primary;
+  }
+  .custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    background-color: $primary;
+  }
+}
+
+.shipping {
+  padding-bottom: 100px;
+  .list {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    &__link {
+      margin-right: 30px;
+      color: $primary;
+      &-active {
+        color: black;
+      }
+    }
   }
 
   .checkout {
@@ -165,13 +196,14 @@ $secondary: #FFF4F6;
     &__link-return {
       padding-left: 10px;
       color: $primary;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
     &__btn {
       background: $primary;
       color: white;
-      padding: 25px 30px;
+      padding: 15px 20px;
       align-self: flex-end;
+      font-size: 1.2rem;
     }
     &-action {
       display: flex;
@@ -207,7 +239,7 @@ $secondary: #FFF4F6;
 }
 
 .cart {
-  padding: 75px 50px;
+  padding: 55px 30px;
   min-height: 100vh;
   background: $secondary;
   &-list {
@@ -303,33 +335,7 @@ $secondary: #FFF4F6;
 }
 
 .shipping-method {
-  .list {
-    padding-left: 0;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    &__link {
-      margin-right: 30px;
-      color: $primary;
-      &-active {
-        color: black;
-      }
-    }
-  }
-  .radio-block {
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: .25em;
-    margin: 30px 0;
-    .custom-radio .custom-control-input:checked~.custom-control-label::before {
-      background-color: $primary;
-    }
-    .custom-control-input:checked~.custom-control-label::before {
-      color: #fff;
-      background-color: $primary;
-    }
-  }
+
   .form__link-return {
     padding-left: 10px;
     color: $primary;
@@ -348,33 +354,27 @@ $secondary: #FFF4F6;
   h3 {
     font-size: 1em;
   }
-
-  .list {
-    padding-left: 0;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    &__link {
-      margin-right: 30px;
-      color: $primary;
-      &-active {
-        color: black;
-      }
-    }
-  }
-
   .form-method, .form-address, .form-remeber {
     margin: 30px 0;
     border: 1px solid #ddd;
     border-radius: .25em;
-    padding: 15px;
+    padding: 0 15px;
     .row-group {
       margin: 0 -15px;
       border-top: 1px solid #ddd;
       border-bottom: 1px solid #ddd;
-      padding: 15px 0;
+      padding: 15px;
       background: #fffffa;
+
+      .input-group {
+        .form-control {
+          border-right: none;
+        }
+        .input-group-text {
+          background: none;
+          color: #ccc;
+        }
+      }
     }
     .row {
       padding: 10px;
@@ -393,5 +393,4 @@ $secondary: #FFF4F6;
     align-self: flex-end;
     font-size: 1.2em;
   }
-
 }

@@ -1,15 +1,36 @@
 <div class="basket">
 
-    <table class="table">
-        <thead>
+    <div class="row">
+        <div class="col-12 history">
+            <ul class="list">
+                <li class="list__item">
+                    <a id="cart-link" href="#" onclick="historyToggle('cart',this);" class="list__link list__link-active">Cart</a>
+                </li>
+                <li class="list__item">
+                    <a href="#" onclick="historyToggle('customer_info',this);" class="list__link">Customer information</a>
+                </li>
+                <li class="list__item">
+                    <a href="#" onclick="historyToggle('shipping-method',this);" class="list__link">Shipping method</a>
+                </li>
+                <li class="list__item">
+                    <a href="#" onclick="historyToggle('payment-method',this);" class="list__link">Payment method</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="checkout">
+
+        <table class="table">
+            <thead>
             <tr class="product-item">
                 <th>&nbsp</th>
                 <th>&nbsp</th>
                 <th class="product-item__quantity">Quantity</th>
                 <th class="product-item__price">Total</th>
             </tr>
-        </thead>
-        <tbody>
+            </thead>
+            <tbody>
             <tr class="product-item">
                 <td class="product-item__image">
                     <img src="/img/logo.jpg" alt="image">
@@ -40,8 +61,8 @@
                     <span>$48.00</span>
                 </td>
             </tr>
-        </tbody>
-        <tfoot>
+            </tbody>
+            <tfoot>
             <tr class="product-item">
                 <th>&nbsp</th>
                 <th>&nbsp</th>
@@ -60,7 +81,9 @@
                     <button class="btn btn-primary">Check out</button>
                 </td>
             </tr>
-        </tfoot>
-    </table>
+            </tfoot>
+        </table>
+
+    </div>
 
 </div>

@@ -1,28 +1,12 @@
 <div class="container-fluid">
     <div class="row content">
+
         <div class="col-md-7 shipping">
-            <div class="row">
-                <div class="col-12 history">
-                    <ul class="list">
-                        <li class="list__item">
-                            <a href="#" class="list__link">Cart</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#" class="list__link list__link-active">Customer information</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#" class="list__link">Shipping method</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#" class="list__link">Payment method</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
             <div class="row">
                 <div class="col-12">
                     <div class="checkout">
                         <h6 class="checkout__title">Express checkout</h6>
+
                         <div class="checkout__paypal"><div id="zoid-paypal-buttons-2a4140ecce_mdc6mzy6mze" class="paypal-buttons paypal-buttons-context-iframe paypal-buttons-label-paypal paypal-buttons-layout-vertical" style="height: 81px; transition: all 0.5s ease-in-out 0s;"><style>
                             #zoid-paypal-buttons-2a4140ecce_mdc6mzy6mze {
                                 position: relative;
@@ -112,31 +96,31 @@
                         <div class="col-md-6 form-group">
                             <div class="form__input-group">
                                 <label for="contact-pass">First name (optional)</label>
-                                <input type="email" class="form__input shipping-address__input-first">
+                                <input type="email" title="First name" class="form__input shipping-address__input-first">
                             </div>
                         </div>
                         <div class="col-md-6 form-group">
                             <div class="form__input-group">
                                 <label for="contact-pass">Last name</label>
-                                <input type="email" class="form__input shipping-address__input-last">
+                                <input type="email" title="Last name" class="form__input shipping-address__input-last">
                             </div>
                         </div>
                         <div class="col-md-12 form-group">
                             <div class="form__input-group">
                                 <label for="contact-pass">Address</label>
-                                <input type="email" class="form__input shipping-address__input-address">
+                                <input type="email" title="Address" class="form__input shipping-address__input-address">
                             </div>
                         </div>
                         <div class="col-md-12 form-group">
                             <div class="form__input-group">
                                 <label for="contact-pass">Apartment, suite, etc. (optional)</label>
-                                <input type="email" class="form__input shipping-address__input-apartment">
+                                <input type="email" title="Address" class="form__input shipping-address__input-apartment">
                             </div>
                         </div>
                         <div class="col-md-12 form-group">
                             <div class="form__input-group">
                                 <label for="contact-pass">Password</label>
-                                <input type="email" class="form__input shipping-address__input-city">
+                                <input type="email" title="Password" class="form__input shipping-address__input-city">
                             </div>
                         </div>
                         <div class="col-md-6 form-group">
@@ -160,7 +144,7 @@
                     </div>
                     <div class="form-row">
                         <div class="col-md-6 form-action">
-                            <a href="#" class="form__link-return">Return to cart</a>
+                            <a href="#" onclick="historyToggle('cart');" class="form__link-return"><i class="fa fa-chevron-left"></i> Return to cart</a>
                         </div>
                         <div class="col-md-6 form-action">
                             <a href="#" class="btn btn-lg active form__btn" role="button" aria-pressed="true">Continue to shipping method</a>
@@ -168,168 +152,6 @@
                     </div>
                 </div>
             </form>
-        </div>
-
-        <div class="col-md-7 shipping-method">
-            <div class="row">
-                <div class="col-12 history">
-                <ul class="list">
-                    <li class="list__item">
-                        <a href="#" class="list__link">Cart</a>
-                    </li>
-                    <li class="list__item">
-                    <a href="#" class="list__link">Customer information</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#" class="list__link list__link-active">Shipping method</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#" class="list__link">Payment method</a>
-                    </li>
-                </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <h2>Shipping method</h2>
-
-                    <div class="radio-block">
-                        <div class="custom-control custom-radio">
-                            <input type="radio" class="custom-control-input" id="defaultGroupExample1" name="groupOfDefaultRadios">
-                            <label class="custom-control-label" for="defaultGroupExample1">Standart Large Parcel (5-14 working days)</label>
-                        </div>
-                    </div>
-
-                    <div class="radio-block">
-                        <div class="custom-control custom-radio">
-                            <input type="radio" class="custom-control-input" id="defaultGroupExample2" name="groupOfDefaultRadios" checked>
-                            <label class="custom-control-label" for="defaultGroupExample2">Standart Large Parcel (5-14 working days)</label>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="col-md-6 form-action">
-                            <a href="#" class="form__link-return">Return to cart</a>
-                        </div>
-                        <div class="col-md-6 form-action">
-                            <a href="#" class="btn btn-lg active form__btn" role="button" aria-pressed="true">Continue to shipping method</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-7 payment-method">
-            <div class="row">
-                <div class="col-12 history">
-                    <ul class="list">
-                        <li class="list__item">
-                            <a href="#" class="list__link">Cart</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#" class="list__link">Customer information</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#" class="list__link">Shipping method</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#" class="list__link  list__link-active">Payment method</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <h2>Payment method</h2>
-                    <h3>All transactions are secure and encrypted.</h3>
-                    <div class="form-method">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="custom-control custom-radio">
-                                    <input type="radio" class="custom-control-input" id="method1" name="method1">
-                                    <label class="custom-control-label" for="method1">Credit card</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row-group">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" title="Card number" placeholder="Card number">
-                                        <div class="input-group-append">
-                                            <div class="input-group-text"><i class="fa fa-lock"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    <input class="form-control" type="text" title="Cardholder name" placeholder="Cardholder name">
-                                </div>
-                                <div class="col-3">
-                                    <input class="form-control" type="text" title="MM / YY" placeholder="MM / YY">
-                                </div>
-                                <div class="col-3">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" title="CVV" placeholder="CVV">
-                                        <div class="input-group-append">
-                                            <div class="input-group-text"><i class="fa fa-question-circle"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="custom-control custom-radio">
-                                    <input type="radio" class="custom-control-input" id="method2" name="method2">
-                                    <label class="custom-control-label" for="method2">PayPal</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h2>Billing address</h2>
-                    <div class="form-address">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="custom-control custom-radio">
-                                    <input type="radio" class="custom-control-input" id="billingAddress1" name="billingAddress1">
-                                    <label class="custom-control-label" for="billingAddress1">Same as shipping address</label>
-                                </div>
-                            </div>
-                        </div>
-                        <hr style="margin: 0">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="custom-control custom-radio">
-                                    <input type="radio" class="custom-control-input" id="billingAddress2" name="billingAddress2">
-                                    <label class="custom-control-label" for="billingAddress2">Use a different billing address</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h2>Remember me</h2>
-                    <div class="form-remeber">
-                        <div class="row">
-                            <div class="col-12">
-                                <input id="save_info" type="checkbox" title="check">
-                                <label for="save_info">Save my information for a faster checkout</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="col-md-6 form-action">
-                            <a href="#" class="form__link-return">Return to cart</a>
-                        </div>
-                        <div class="col-md-6 form-action">
-                            <a href="#" class="btn btn-lg active form__btn" role="button" aria-pressed="true">Continue to shipping method</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <div class="col-md-5 cart">
@@ -354,7 +176,7 @@
             <hr>
             <div class="input-group cart-discount">
                 <input type="text" class="form-control form-control-lg cart-discount__input" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <button class="btn disabled btn-secondary btn-lg cart-discount__btn" type="button">Button</button>
+                <button class="btn disabled btn-secondary btn-lg cart-discount__btn" type="button">Apply</button>
             </div>
             <hr>
             <ul class="cart-prices-list">
@@ -374,5 +196,6 @@
                 <span class="cart-total__price">$48.00</span>
             </div>
         </div>
+
     </div>
 </div>
